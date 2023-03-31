@@ -5,17 +5,56 @@
 }
 
 html {
-    background-color: green;
+    background-color: rgb(13, 43, 13);
     text-align: center;
+}
+
+header {
+    text-align: left;
+    display: block;
+    border: 2px solid;
 }
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: blueviolet;
+    color: whitesmoke;
     align-items: center;
 }
 
 main {
+    text-align: center center;
+    flex-direction: row;
+}
+
+div {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    border-style: rgb(1, 26, 1);
+}
+
+div h3 {
+    padding-right: 5px;
+    background-color: rgb(2, 25, 2)
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem; 
+}
+
+@media only screen and (max-width: 767px) {
+    div {
+    box-shadow: none;
+    border: none;
+    font-size: 90%;
+    flex-direction:column ;
     text-align: center;
-    flex-direction: column;
+    font-size: 100%;
+    }
 }
